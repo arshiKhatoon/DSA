@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int getcharcount(char name[]){
+int getcharcount( string name){
 
     int count = 0;
     for (int i = 0; name[i] != '\0'; i++)
@@ -12,7 +12,9 @@ int getcharcount(char name[]){
 }
 int main()
 {
-    char name[20];
+
+
+   string name;
     cout<<"enter your name ";
     cin>>name;
     cout<<"length of string  "<<getcharcount(name);
